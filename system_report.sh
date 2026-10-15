@@ -27,7 +27,6 @@ free -m >> "$OUTPUT_FILE"
 echo "" >> "$OUTPUT_FILE"
 
 echo "### TOP RUNNING PROCESSES ###" >> "$OUTPUT_FILE"
-# Using 'ps' instead of 'top' provides cleaner, non-interactive output for text files
 ps -eo pid,user,%cpu,%mem,command --sort=-%cpu | head -n 15 >> "$OUTPUT_FILE"
 echo "" >> "$OUTPUT_FILE"
 
