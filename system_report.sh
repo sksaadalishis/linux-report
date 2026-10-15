@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Define the output file
 OUTPUT_FILE="system-report.txt"
  
 > "$OUTPUT_FILE"
